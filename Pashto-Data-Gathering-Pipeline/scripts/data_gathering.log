@@ -1,0 +1,118 @@
+2025-06-26 03:42:09,879 - WARNING - Stopwords file not found. Running create_stopwords.py...
+2025-06-26 03:42:09,915 - ERROR - Failed to load stopwords: [Errno 2] No such file or directory: '/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/stopwords.csv'
+2025-06-26 03:42:09,916 - INFO - Starting data gathering process...
+2025-06-26 03:42:09,917 - INFO - Starting data gathering from 5 sources...
+2025-06-26 03:42:09,917 - INFO - Processing source: BBC Pashto
+2025-06-26 03:42:09,917 - INFO - Getting article URLs from BBC Pashto...
+2025-06-26 03:42:11,610 - INFO - Found 0 article URLs from BBC Pashto
+2025-06-26 03:42:13,571 - INFO - Successfully gathered 0 articles from BBC Pashto
+2025-06-26 03:42:13,571 - INFO - Processing source: VOA Pashto
+2025-06-26 03:42:13,571 - INFO - Getting article URLs from VOA Pashto...
+2025-06-26 03:42:15,420 - INFO - Found 40 article URLs from VOA Pashto
+2025-06-26 03:42:34,947 - INFO - Successfully gathered 18 articles from VOA Pashto
+2025-06-26 03:42:34,967 - INFO - Saved 18 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_034234_voa_pashto.csv
+2025-06-26 03:42:34,975 - INFO - Saved 18 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_034234_voa_pashto.json
+2025-06-26 03:42:34,976 - INFO - Processing source: Azadi Radio
+2025-06-26 03:42:34,976 - INFO - Getting article URLs from Azadi Radio...
+2025-06-26 03:42:35,515 - ERROR - Error getting article URLs from Azadi Radio: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2025-06-26 03:42:37,068 - INFO - Successfully gathered 0 articles from Azadi Radio
+2025-06-26 03:42:37,068 - INFO - Processing source: Tolonews
+2025-06-26 03:42:37,068 - INFO - Getting article URLs from Tolonews...
+2025-06-26 03:42:38,711 - ERROR - Failed to get content from https://tolonews.com/ps: Status 404
+2025-06-26 03:42:38,713 - INFO - Successfully gathered 0 articles from Tolonews
+2025-06-26 03:42:38,713 - INFO - Processing source: Pajhwok
+2025-06-26 03:42:38,713 - INFO - Getting article URLs from Pajhwok...
+2025-06-26 03:42:41,759 - INFO - Found 0 article URLs from Pajhwok
+2025-06-26 03:42:44,035 - INFO - Successfully gathered 0 articles from Pajhwok
+2025-06-26 03:42:44,042 - INFO - Saved 18 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_034244_all_gathered_articles.csv
+2025-06-26 03:42:44,046 - INFO - Saved 18 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_034244_all_gathered_articles.json
+2025-06-26 03:42:44,046 - INFO - Data gathering complete! Collected 18 articles in total
+2025-06-26 03:42:44,226 - INFO - Content length statistics:
+2025-06-26 03:42:44,227 - INFO -   Mean: 1858.44 characters
+2025-06-26 03:42:44,228 - INFO -   Min: 1246 characters
+2025-06-26 03:42:44,228 - INFO -   Max: 2636 characters
+2025-06-26 03:42:44,228 - INFO -   Median: 1717.0 characters
+2025-06-26 03:42:44,228 - INFO - All data saved to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data
+2025-06-26 03:56:03,426 - WARNING - Stopwords file not found. Running create_stopwords.py...
+2025-06-26 03:56:03,471 - ERROR - Failed to load stopwords: [Errno 2] No such file or directory: '/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/stopwords.csv'
+2025-06-26 03:56:03,472 - INFO - Starting data gathering process...
+2025-06-26 03:56:03,472 - INFO - Starting data gathering from 5 sources...
+2025-06-26 03:56:03,472 - INFO - Processing source: BBC Pashto
+2025-06-26 03:56:03,472 - INFO - Getting article URLs from BBC Pashto...
+2025-06-26 03:56:04,363 - INFO - Found 0 article URLs from BBC Pashto
+2025-06-26 03:56:06,828 - INFO - Successfully gathered 0 articles from BBC Pashto
+2025-06-26 03:56:06,828 - INFO - Processing source: VOA Pashto
+2025-06-26 03:56:06,828 - INFO - Getting article URLs from VOA Pashto...
+2025-06-26 03:56:07,598 - INFO - Found 40 article URLs from VOA Pashto
+2025-06-26 03:56:27,509 - INFO - Successfully gathered 18 articles from VOA Pashto
+2025-06-26 03:56:27,525 - INFO - Saved 18 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_035627_voa_pashto.csv
+2025-06-26 03:56:27,530 - INFO - Saved 18 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_035627_voa_pashto.json
+2025-06-26 03:56:27,531 - INFO - Processing source: Azadi Radio
+2025-06-26 03:56:27,531 - INFO - Getting article URLs from Azadi Radio...
+2025-06-26 03:56:30,911 - INFO - Found 45 article URLs from Azadi Radio
+2025-06-26 03:56:54,458 - INFO - Successfully gathered 36 articles from Azadi Radio
+2025-06-26 03:56:54,486 - INFO - Saved 36 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_035654_azadi_radio.csv
+2025-06-26 03:56:54,498 - INFO - Saved 36 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_035654_azadi_radio.json
+2025-06-26 03:56:54,498 - INFO - Processing source: Tolonews
+2025-06-26 03:56:54,498 - INFO - Getting article URLs from Tolonews...
+2025-06-26 03:56:55,657 - ERROR - Failed to get content from https://tolonews.com/ps: Status 404
+2025-06-26 03:56:55,658 - INFO - Successfully gathered 0 articles from Tolonews
+2025-06-26 03:56:55,658 - INFO - Processing source: Pajhwok
+2025-06-26 03:56:55,658 - INFO - Getting article URLs from Pajhwok...
+2025-06-26 03:56:59,096 - INFO - Found 0 article URLs from Pajhwok
+2025-06-26 03:57:01,145 - INFO - Successfully gathered 0 articles from Pajhwok
+2025-06-26 03:57:01,172 - INFO - Saved 54 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_035701_all_gathered_articles.csv
+2025-06-26 03:57:01,183 - INFO - Saved 54 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_035701_all_gathered_articles.json
+2025-06-26 03:57:01,183 - INFO - Data gathering complete! Collected 54 articles in total
+2025-06-26 03:57:01,186 - INFO - Content length statistics:
+2025-06-26 03:57:01,187 - INFO -   Mean: 3304.26 characters
+2025-06-26 03:57:01,187 - INFO -   Min: 102 characters
+2025-06-26 03:57:01,187 - INFO -   Max: 7647 characters
+2025-06-26 03:57:01,188 - INFO -   Median: 2328.0 characters
+2025-06-26 03:57:01,188 - INFO - All data saved to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data
+2025-06-26 04:38:11,663 - WARNING - Stopwords file not found. Running create_stopwords.py...
+2025-06-26 04:38:11,686 - ERROR - Failed to load stopwords: [Errno 2] No such file or directory: '/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/stopwords.csv'
+2025-06-26 04:38:11,687 - INFO - Starting data gathering process...
+2025-06-26 04:38:11,687 - INFO - Starting data gathering from 5 sources...
+2025-06-26 04:38:11,687 - INFO - Processing source: BBC Pashto
+2025-06-26 04:38:11,687 - INFO - Getting article URLs from BBC Pashto...
+2025-06-26 04:38:12,699 - INFO - Found 0 article URLs from BBC Pashto
+2025-06-26 04:38:14,736 - INFO - Successfully gathered 0 articles from BBC Pashto
+2025-06-26 04:38:14,737 - INFO - Processing source: VOA Pashto
+2025-06-26 04:38:14,737 - INFO - Getting article URLs from VOA Pashto...
+2025-06-26 04:38:16,719 - INFO - Found 40 article URLs from VOA Pashto
+2025-06-26 04:43:12,158 - WARNING - Stopwords file not found. Running create_stopwords.py...
+2025-06-26 04:43:12,194 - ERROR - Failed to load stopwords: [Errno 2] No such file or directory: '/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/stopwords.csv'
+2025-06-26 04:43:12,195 - INFO - Starting data gathering process...
+2025-06-26 04:43:12,195 - INFO - Starting data gathering from 5 sources...
+2025-06-26 04:43:12,195 - INFO - Processing source: BBC Pashto
+2025-06-26 04:43:12,195 - INFO - Getting article URLs from BBC Pashto...
+2025-06-26 04:43:12,930 - INFO - Found 0 article URLs from BBC Pashto
+2025-06-26 04:43:14,725 - INFO - Successfully gathered 0 articles from BBC Pashto
+2025-06-26 04:43:14,725 - INFO - Processing source: VOA Pashto
+2025-06-26 04:43:14,725 - INFO - Getting article URLs from VOA Pashto...
+2025-06-26 04:43:16,468 - INFO - Found 40 article URLs from VOA Pashto
+2025-06-26 04:43:36,209 - INFO - Successfully gathered 18 articles from VOA Pashto
+2025-06-26 04:43:36,215 - INFO - Saved 18 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_044336_voa_pashto.csv
+2025-06-26 04:43:36,217 - INFO - Saved 18 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_044336_voa_pashto.json
+2025-06-26 04:43:36,217 - INFO - Processing source: Azadi Radio
+2025-06-26 04:43:36,217 - INFO - Getting article URLs from Azadi Radio...
+2025-06-26 04:43:36,594 - ERROR - Error getting article URLs from Azadi Radio: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2025-06-26 04:43:38,301 - INFO - Successfully gathered 0 articles from Azadi Radio
+2025-06-26 04:43:38,302 - INFO - Processing source: Tolonews
+2025-06-26 04:43:38,302 - INFO - Getting article URLs from Tolonews...
+2025-06-26 04:43:39,947 - ERROR - Failed to get content from https://tolonews.com/ps: Status 404
+2025-06-26 04:43:39,948 - INFO - Successfully gathered 0 articles from Tolonews
+2025-06-26 04:43:39,949 - INFO - Processing source: Pajhwok
+2025-06-26 04:43:39,949 - INFO - Getting article URLs from Pajhwok...
+2025-06-26 04:43:43,198 - INFO - Found 0 article URLs from Pajhwok
+2025-06-26 04:43:45,602 - INFO - Successfully gathered 0 articles from Pajhwok
+2025-06-26 04:43:45,615 - INFO - Saved 18 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_044345_all_gathered_articles.csv
+2025-06-26 04:43:45,617 - INFO - Saved 18 articles to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data/20250626_044345_all_gathered_articles.json
+2025-06-26 04:43:45,617 - INFO - Data gathering complete! Collected 18 articles in total
+2025-06-26 04:43:45,619 - INFO - Content length statistics:
+2025-06-26 04:43:45,619 - INFO -   Mean: 1858.44 characters
+2025-06-26 04:43:45,619 - INFO -   Min: 1246 characters
+2025-06-26 04:43:45,619 - INFO -   Max: 2636 characters
+2025-06-26 04:43:45,620 - INFO -   Median: 1717.0 characters
+2025-06-26 04:43:45,620 - INFO - All data saved to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data

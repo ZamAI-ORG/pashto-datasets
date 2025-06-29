@@ -1,0 +1,2 @@
+2025-06-26 04:02:06,480 - ERROR - No PDF extraction library found. Please install one of: pdfplumber, pdfminer.six, PyPDF2, or PyMuPDF (fitz)
+2025-06-26 04:03:58,497 - ERROR - No PDF extraction library found. Please install one of: pdfplumber, pdfminer.six, PyPDF2, or PyMuPDF (fitz)

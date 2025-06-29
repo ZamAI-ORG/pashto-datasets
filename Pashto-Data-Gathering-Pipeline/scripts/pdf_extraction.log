@@ -1,0 +1,2 @@
+2025-06-26 03:57:02,217 - ERROR - No PDF extraction library found. Please install one of: pdfplumber, pdfminer.six, PyPDF2, or PyMuPDF (fitz)
+2025-06-26 04:43:46,229 - WARNING - OCR libraries (pytesseract, Pillow) not found. OCR functionality will be disabled.
