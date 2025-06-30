@@ -1,0 +1,70 @@
+# ZamAI Pashto Dataset and Model Training Requirements
+# Install with: pip install -r requirements.txt
+
+# Core ML libraries
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# HuggingFace ecosystem
+transformers>=4.35.0
+datasets>=2.14.0
+accelerate>=0.24.0
+huggingface_hub>=0.17.0
+tokenizers>=0.15.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Text processing
+nltk>=3.8
+regex>=2023.0.0
+
+# Model evaluation
+evaluate>=0.4.0
+scikit-learn>=1.3.0
+
+# Visualization and monitoring
+matplotlib>=3.7.0
+seaborn>=0.12.0
+tensorboard>=2.14.0
+wandb>=0.15.0
+
+# Web interface
+gradio>=4.0.0
+streamlit>=1.28.0
+
+# File handling
+jsonlines>=4.0.0
+PyYAML>=6.0.0
+
+# Progress bars and utilities
+tqdm>=4.65.0
+rich>=13.0.0
+
+# API and web requests
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Image processing (for future multimodal features)
+Pillow>=10.0.0
+
+# Audio processing (for future speech features)
+librosa>=0.10.0
+soundfile>=0.12.0
+
+# Development tools
+jupyter>=1.0.0
+ipykernel>=6.25.0
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Optional: For advanced features
+# sentence-transformers>=2.2.0  # For embeddings
+# faiss-cpu>=1.7.0  # For vector search
+# redis>=4.5.0  # For caching
+# fastapi>=0.104.0  # For API deployment
+# uvicorn>=0.24.0  # For API server
