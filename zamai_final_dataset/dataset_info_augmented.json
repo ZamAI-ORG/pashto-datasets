@@ -1,0 +1,25 @@
+{
+  "total_examples": 32,
+  "categories": {
+    "geography": 1,
+    "language": 1,
+    "history": 1,
+    "language_learning": 4,
+    "grammar": 1,
+    "islamic": 2,
+    "culture": 2,
+    "education": 3,
+    "health": 1,
+    "business": 2,
+    "conversation": 3,
+    "summarization": 1,
+    "literature": 1,
+    "business_automation": 4,
+    "cultural_content": 5
+  },
+  "augmentation_methods": {
+    "original": 20,
+    "context_expansion": 3,
+    "synthetic_generation": 9
+  }
+}
