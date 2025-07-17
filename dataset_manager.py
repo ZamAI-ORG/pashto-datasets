@@ -65,7 +65,9 @@ def insert_csv(file_path: str, new_data: List[dict]):
 if __name__ == "__main__":
     # Example usage:
     # Copy all dataset files from a session folder to zamai_final_dataset
-    copy_dataset_files("zamai_combined_dataset", "zamai_final_dataset")
+    # Example: Copy files from zamai_final_dataset to another folder (for demonstration)
+    # copy_dataset_files("zamai_final_dataset", "zamai_final_dataset_backup")
+    print("No source folder found. Update the path in copy_dataset_files() to a valid folder if you want to copy datasets.")
 
     # Insert new records into a JSONL file
     # new_records = [{"instruction": "...", "response": "...", "category": "..."}]

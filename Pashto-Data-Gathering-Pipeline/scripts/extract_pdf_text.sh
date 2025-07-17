@@ -2,9 +2,9 @@
 # Script to extract Pashto text from PDF files
 
 # Set variables
-WORKSPACE_DIR="/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets"
-SCRIPT_DIR="$WORKSPACE_DIR/scripts"
-PDF_DIR="$WORKSPACE_DIR/pdf_documents"
+WORKSPACE_DIR="/workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data"
+SCRIPT_DIR="/workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data-Gathering-Pipeline/scripts"
+PDF_DIR="$WORKSPACE_DIR/pashto-pdf-book"
 OUTPUT_DIR="$WORKSPACE_DIR/extracted_pdf_data"
 
 # Create directories if they don't exist

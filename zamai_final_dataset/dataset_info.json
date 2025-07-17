@@ -1,19 +1,18 @@
 {
   "name": "ZamAI Pashto Training Dataset",
   "version": "1.0",
-  "total_examples": 20,
+  "created": "2025-07-17T05:27:10.327708",
+  "total_examples": 137,
   "categories": {
-    "geography": 1,
-    "language_learning": 1,
-    "islamic": 2,
-    "culture": 2,
-    "education": 3,
-    "health": 1,
-    "business": 2,
-    "conversation": 3,
-    "summarization": 1,
-    "literature": 1
+    "tutor_chat": 46,
+    "general_qa": 3,
+    "news_summarization": 72,
+    "business_automation": 4,
+    "cultural_content": 4,
+    "islamic_content": 3,
+    "language_learning": 5
   },
-  "description": "High-quality Pashto language dataset for tutor bots, chat assistants, and business automation",
-  "format": "instruction-response pairs with category labels"
+  "description": "Comprehensive Pashto language dataset for tutor bots, chat assistants, and business automation",
+  "usage": "Fine-tuning language models for Pashto NLP tasks",
+  "format": "instruction-response pairs with optional input field"
 }

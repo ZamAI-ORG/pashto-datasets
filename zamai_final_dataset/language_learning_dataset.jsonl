@@ -1,1 +1,5 @@
-...existing content from zamai_final_dataset/language_learning_dataset.jsonl...
+{"instruction": "سلام وروره!", "response": "سلام ورور! ښه راغلاست. د ماشومانو میره د خیر؟ د څه مرستې اړتیا لرئ؟", "category": "language_learning"}
+{"instruction": "ستاسو حال څنګه دی؟", "response": "زموږ حال د الله په مهربانۍ ښه دی. ستاسو حال څنګه دی؟ د کورنۍ میره د خیر؟", "category": "language_learning"}
+{"instruction": "ډېر مننه ستاسو د مرستې لپاره", "response": "دا زموږ خوښي ده چې ستاسو سره مرسته وکړو. که بل ځل د مرستې اړتیا ولرئ، موږ دلته یو.", "category": "language_learning"}
+{"instruction": "دا څومره وخت نیسي؟", "response": "دا د کار ډول ته پورې اړه لري. عموماً دا ډېر وخت نه نیسي. که تاسو دقیق معلومات راکړئ، زه دی د ټولو ښه وخت ورکولی شم.", "category": "language_learning"}
+{"instruction": "زه دا نه پوهیږم", "response": "هیڅ اندېښنه مه کوئ! دا عادي خبره ده. راځئ چې دا ګام په ګام تشریح کړم. کومه برخه ستاسو ته ستونزمنه ښکاري؟", "category": "language_learning"}

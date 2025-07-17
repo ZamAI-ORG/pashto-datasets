@@ -1,0 +1,21 @@
+{
+  "total_examples": 322,
+  "categories": {
+    "tutor_chat": 139,
+    "news_summarization": 108,
+    "islamic_content": 12,
+    "language_learning": 20,
+    "business_automation": 19,
+    "general_qa": 3,
+    "cultural_content": 21
+  },
+  "augmentation_methods": {
+    "original": 137,
+    "detailed_response": 46,
+    "simplified_response": 46,
+    "question_reformulation": 44,
+    "context_expansion": 36,
+    "formal_response": 4,
+    "synthetic_generation": 9
+  }
+}

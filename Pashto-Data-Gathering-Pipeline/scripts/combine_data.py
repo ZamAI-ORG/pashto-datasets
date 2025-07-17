@@ -45,12 +45,12 @@ else:
 
 # Save the combined dataset
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-output_file = f"/home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/combined_data/{timestamp}_combined_pashto_dataset.csv"
+output_file = f"/workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data-Gathering-Pipeline/combined_data/{timestamp}_combined_pashto_dataset.csv"
 combined_df.to_csv(output_file, index=False, encoding='utf-8')
 print(f"Saved combined dataset ({len(combined_df)} entries) to {output_file}")
 
 # Create a symbolic link or copy to a standard name for easy access
-standard_file = "/home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/combined_data/latest_combined_dataset.csv"
+standard_file = "/workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data-Gathering-Pipeline/combined_data/latest_combined_dataset.csv"
 if os.path.exists(standard_file):
     os.remove(standard_file)
 os.symlink(output_file, standard_file)

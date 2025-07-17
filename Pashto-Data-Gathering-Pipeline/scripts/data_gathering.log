@@ -116,3 +116,40 @@
 2025-06-26 04:43:45,619 - INFO -   Max: 2636 characters
 2025-06-26 04:43:45,620 - INFO -   Median: 1717.0 characters
 2025-06-26 04:43:45,620 - INFO - All data saved to /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data
+2025-07-17 05:40:00,137 - WARNING - Stopwords file not found. Running create_stopwords.py...
+2025-07-17 05:40:00,153 - ERROR - Failed to load stopwords: [Errno 2] No such file or directory: '/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/stopwords.csv'
+2025-07-17 05:40:00,154 - INFO - Starting data gathering process...
+2025-07-17 05:40:00,154 - INFO - Starting data gathering from 5 sources...
+2025-07-17 05:40:00,154 - INFO - Processing source: BBC Pashto
+2025-07-17 05:40:00,154 - INFO - Getting article URLs from BBC Pashto...
+2025-07-17 05:40:02,029 - INFO - Found 0 article URLs from BBC Pashto
+2025-07-17 05:40:03,714 - INFO - Successfully gathered 0 articles from BBC Pashto
+2025-07-17 05:40:03,714 - INFO - Processing source: VOA Pashto
+2025-07-17 05:40:03,714 - INFO - Getting article URLs from VOA Pashto...
+2025-07-17 05:40:05,858 - INFO - Found 40 article URLs from VOA Pashto
+2025-07-17 05:40:26,768 - INFO - Successfully gathered 20 articles from VOA Pashto
+2025-07-17 05:40:26,775 - INFO - Saved 20 articles to /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data-Gathering-Pipeline/gathered_data/20250717_054026_voa_pashto.csv
+2025-07-17 05:40:26,778 - INFO - Saved 20 articles to /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data-Gathering-Pipeline/gathered_data/20250717_054026_voa_pashto.json
+2025-07-17 05:40:26,779 - INFO - Processing source: Azadi Radio
+2025-07-17 05:40:26,779 - INFO - Getting article URLs from Azadi Radio...
+2025-07-17 05:40:27,356 - INFO - Found 49 article URLs from Azadi Radio
+2025-07-17 05:40:53,327 - INFO - Successfully gathered 41 articles from Azadi Radio
+2025-07-17 05:40:53,338 - INFO - Saved 41 articles to /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data-Gathering-Pipeline/gathered_data/20250717_054053_azadi_radio.csv
+2025-07-17 05:40:53,346 - INFO - Saved 41 articles to /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data-Gathering-Pipeline/gathered_data/20250717_054053_azadi_radio.json
+2025-07-17 05:40:53,346 - INFO - Processing source: Tolonews
+2025-07-17 05:40:53,346 - INFO - Getting article URLs from Tolonews...
+2025-07-17 05:40:53,400 - ERROR - Failed to get content from https://tolonews.com/ps: Status 403
+2025-07-17 05:40:53,401 - INFO - Successfully gathered 0 articles from Tolonews
+2025-07-17 05:40:53,401 - INFO - Processing source: Pajhwok
+2025-07-17 05:40:53,401 - INFO - Getting article URLs from Pajhwok...
+2025-07-17 05:40:55,227 - INFO - Found 0 article URLs from Pajhwok
+2025-07-17 05:40:56,942 - INFO - Successfully gathered 0 articles from Pajhwok
+2025-07-17 05:40:56,955 - INFO - Saved 61 articles to /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data-Gathering-Pipeline/gathered_data/20250717_054056_all_gathered_articles.csv
+2025-07-17 05:40:56,967 - INFO - Saved 61 articles to /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data-Gathering-Pipeline/gathered_data/20250717_054056_all_gathered_articles.json
+2025-07-17 05:40:56,967 - INFO - Data gathering complete! Collected 61 articles in total
+2025-07-17 05:40:57,011 - INFO - Content length statistics:
+2025-07-17 05:40:57,012 - INFO -   Mean: 3564.02 characters
+2025-07-17 05:40:57,012 - INFO -   Min: 93 characters
+2025-07-17 05:40:57,012 - INFO -   Max: 8946 characters
+2025-07-17 05:40:57,016 - INFO -   Median: 3202.0 characters
+2025-07-17 05:40:57,017 - INFO - All data saved to /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data-Gathering-Pipeline/gathered_data

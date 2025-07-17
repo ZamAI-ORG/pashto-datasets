@@ -1,2 +1,60 @@
 2025-06-26 03:57:02,217 - ERROR - No PDF extraction library found. Please install one of: pdfplumber, pdfminer.six, PyPDF2, or PyMuPDF (fitz)
 2025-06-26 04:43:46,229 - WARNING - OCR libraries (pytesseract, Pillow) not found. OCR functionality will be disabled.
+2025-07-17 05:40:57,602 - ERROR - No PDF extraction library found. Please install one of: pdfplumber, pdfminer.six, PyPDF2, or PyMuPDF (fitz)
+2025-07-17 05:52:18,984 - WARNING - OCR libraries (pytesseract, Pillow) not found. OCR functionality will be disabled.
+2025-07-17 05:52:18,986 - INFO - Stopwords file not found. Creating it...
+2025-07-17 05:52:18,986 - WARNING - Couldn't create or find stopwords file. Using minimal stopwords set.
+2025-07-17 05:52:18,986 - INFO - Using pdfplumber for PDF text extraction
+2025-07-17 05:52:18,986 - INFO - Starting PDF text extraction process...
+2025-07-17 05:52:18,987 - INFO - Found 22 PDF files in /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book
+2025-07-17 05:52:18,987 - WARNING - Input directory /home/kaliai/ZamAI-Pashto-Data-Processing-Pipeline/pashto-pdf-book does not exist.
+2025-07-17 05:52:43,865 - ERROR - Error extracting text from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/غنی-خان-1ozxgc.pdf with pdfplumber: Unknown filter: param={}
+2025-07-17 05:52:43,873 - WARNING - Insufficient text extracted from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/غنی-خان-1ozxgc.pdf
+2025-07-17 05:52:53,754 - ERROR - Error extracting text from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/معاصره-لیکوالي-hu5shj.pdf with pdfplumber: Unexpected EOF
+2025-07-17 05:52:53,765 - WARNING - Insufficient text extracted from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/معاصره-لیکوالي-hu5shj.pdf
+2025-07-17 05:52:57,562 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:57,627 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:57,639 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:57,660 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:57,693 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:57,730 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:57,751 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:57,777 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:57,807 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:57,877 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:57,877 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,003 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,034 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,130 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,141 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,157 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,168 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,173 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,173 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,185 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,185 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,186 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,186 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,213 - WARNING - Data-loss while decompressing corrupted data
+2025-07-17 05:52:58,224 - ERROR - Error extracting text from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/بې-غږه-خبرې-dusfmz.pdf with pdfplumber: Unexpected EOF
+2025-07-17 05:52:58,229 - WARNING - Insufficient text extracted from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/بې-غږه-خبرې-dusfmz.pdf
+2025-07-17 05:53:43,257 - ERROR - Error extracting text from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/پښتنې-قبيلې-وپيژنۍ-xxludh.pdf with pdfplumber: Unexpected EOF
+2025-07-17 05:53:43,258 - WARNING - Insufficient text extracted from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/پښتنې-قبيلې-وپيژنۍ-xxludh.pdf
+2025-07-17 05:53:45,882 - WARNING - Insufficient text extracted from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/د-پښتو-ادبیاتو-تاریخ-y2qsrj.pdf
+2025-07-17 05:53:46,368 - ERROR - Error extracting text from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/د-سکون-څرک-2ndag6.pdf with pdfplumber: Unexpected EOF
+2025-07-17 05:53:46,368 - WARNING - Insufficient text extracted from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/د-سکون-څرک-2ndag6.pdf
+2025-07-17 05:53:53,501 - ERROR - Error extracting text from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/د-پښتو-ژبې-د-تدريس-اصول--olhqay.pdf with pdfplumber: Unexpected EOF
+2025-07-17 05:53:53,502 - WARNING - Insufficient text extracted from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/د-پښتو-ژبې-د-تدريس-اصول--olhqay.pdf
+2025-07-17 05:53:57,142 - ERROR - Error extracting text from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/وطنه-ستا-لیونۍ-دریم-چاپ-ud3xqr.pdf with pdfplumber: Unexpected EOF
+2025-07-17 05:53:57,152 - WARNING - Insufficient text extracted from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/وطنه-ستا-لیونۍ-دریم-چاپ-ud3xqr.pdf
+2025-07-17 05:54:23,081 - ERROR - Error extracting text from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/د-افغانستان-پر-معاصر-تاریخ-یوه-لنډه-کتنه-qmglbm.pdf with pdfplumber: Unexpected EOF
+2025-07-17 05:54:23,082 - WARNING - Insufficient text extracted from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/د-افغانستان-پر-معاصر-تاریخ-یوه-لنډه-کتنه-qmglbm.pdf
+2025-07-17 05:54:23,918 - ERROR - Error extracting text from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/پښتو-ګرامر-وصال-pzae8l.pdf with pdfplumber: Unexpected EOF
+2025-07-17 05:54:23,918 - WARNING - Insufficient text extracted from /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book/پښتو-ګرامر-وصال-pzae8l.pdf
+2025-07-17 05:54:23,973 - INFO - Saved 11 extracted texts to /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/extracted_pdf_data/20250717_055423_extracted_pdf_text.csv
+2025-07-17 05:54:24,008 - INFO - Saved 11 extracted texts to /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/extracted_pdf_data/20250717_055423_extracted_pdf_text.json
+2025-07-17 05:54:24,026 - INFO - Saved JSONL format for model fine-tuning to /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/extracted_pdf_data/20250717_055423_extracted_pdf_text.jsonl
+2025-07-17 05:54:24,026 - INFO - Created symbolic links to latest extracted files
+2025-07-17 05:54:24,026 - INFO - PDF text extraction complete!
+2025-07-17 05:54:24,026 - INFO - Extracted 11 text segments from PDFs in /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/pashto-pdf-book
+2025-07-17 05:54:24,027 - INFO - Results saved to /workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data/extracted_pdf_data
