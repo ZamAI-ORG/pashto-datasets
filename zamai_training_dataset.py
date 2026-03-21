@@ -25,8 +25,9 @@ class PashtoDatasetCreator:
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True)
         
-        # Data paths
-        self.data_root = Path("/workspaces/Pashto-Dataset-Creating-Dataset/Pashto-Data")
+        # Data paths – resolve relative to this file so the script works from any
+        # working directory and is not tied to a specific machine's layout.
+        self.data_root = Path(__file__).parent / "Pashto-Data"
         
         # Dataset categories
         self.datasets = {
