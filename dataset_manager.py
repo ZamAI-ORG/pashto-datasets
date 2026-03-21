@@ -112,9 +112,13 @@ def validate_dataset(file_path: str) -> Tuple[bool, List[str]]:
         # For summarisation-style examples the "input" field carries the article
         # text; two records with the same instruction but different inputs are
         # distinct, so we key on both.
+        instruction_val = record.get("instruction", "")
+        input_val = record.get("input", "")
+        instruction_key = instruction_val.strip() if isinstance(instruction_val, str) else ""
+        input_key = input_val.strip() if isinstance(input_val, str) else ""
         key = (
-            record.get("instruction", "").strip(),
-            record.get("input", "").strip(),
+            instruction_key,
+            input_key,
         )
         if key in seen:
             issues.append(
