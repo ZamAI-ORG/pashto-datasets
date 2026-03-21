@@ -70,6 +70,13 @@ class ZamAIPashtoAssistant:
                          temperature: float = 0.7,
                          top_p: float = 0.95) -> str:
         """Generate response for user message"""
+
+        # Validate input
+        message = message.strip() if message else ""
+        if not message:
+            return "لطفاً یوه پوښتنه ولیکئ. / Please enter a question."
+        if len(message) > 2000:
+            return "ستاسو پوښتنه ډیره اوږده ده. لطفاً لنډه پوښتنه ولیکئ. / Your question is too long. Please shorten it."
         
         if not self.pipeline:
             if not self.load_model():
@@ -156,8 +163,8 @@ ABOUT_TEXT = """
 """
 
 # Custom CSS for better RTL support
+# Note: gr.Blocks(css=...) expects raw CSS without <style> tags.
 CUSTOM_CSS = """
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap');
 
 .gradio-container {
@@ -209,7 +216,6 @@ CUSTOM_CSS = """
     text-align: right !important;
     color: #424242 !important;
 }
-</style>
 """
 
 def create_interface():

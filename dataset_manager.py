@@ -2,7 +2,12 @@ import os
 import shutil
 import json
 import csv
-from typing import List
+from typing import List, Dict, Any, Tuple
+
+
+# ---------------------------------------------------------------------------
+# File-level helpers
+# ---------------------------------------------------------------------------
 
 def copy_dataset_files(source_folder: str, target_folder: str, file_types: List[str] = ["json", "jsonl", "csv"]):
     """
@@ -62,19 +67,149 @@ def insert_csv(file_path: str, new_data: List[dict]):
     print(f"Inserted {len(new_data)} records into {file_path}")
 
 
+# ---------------------------------------------------------------------------
+# Dataset validation
+# ---------------------------------------------------------------------------
+
+def validate_dataset(file_path: str) -> Tuple[bool, List[str]]:
+    """Validate a JSONL dataset file for common quality issues.
+
+    Checks performed:
+    - Every record has non-empty ``instruction`` and ``response`` fields.
+    - No duplicate instructions.
+    - ``instruction`` and ``response`` are strings.
+
+    Returns a tuple ``(is_valid, issues)`` where *is_valid* is ``True`` only
+    when the issues list is empty.
+    """
+    issues: List[str] = []
+
+    if not os.path.exists(file_path):
+        return False, [f"File not found: {file_path}"]
+
+    records: List[Dict[str, Any]] = []
+    with open(file_path, "r", encoding="utf-8") as f:
+        for line_no, line in enumerate(f, start=1):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                record = json.loads(line)
+            except json.JSONDecodeError as exc:
+                issues.append(f"Line {line_no}: JSON parse error – {exc}")
+                continue
+
+            if not isinstance(record.get("instruction"), str) or not record["instruction"].strip():
+                issues.append(f"Line {line_no}: missing or empty 'instruction'")
+            if not isinstance(record.get("response"), str) or not record["response"].strip():
+                issues.append(f"Line {line_no}: missing or empty 'response'")
+
+            records.append(record)
+
+    # Duplicate check (instruction + input together form the unique key)
+    seen: dict = {}
+    for idx, record in enumerate(records, start=1):
+        # For summarisation-style examples the "input" field carries the article
+        # text; two records with the same instruction but different inputs are
+        # distinct, so we key on both.
+        key = (
+            record.get("instruction", "").strip(),
+            record.get("input", "").strip(),
+        )
+        if key in seen:
+            issues.append(
+                f"Duplicate entry at record {idx} (first seen at record {seen[key]}): "
+                f"instruction='{key[0][:60]}...'"
+            )
+        else:
+            seen[key] = idx
+
+    return len(issues) == 0, issues
+
+
+# ---------------------------------------------------------------------------
+# Dataset statistics
+# ---------------------------------------------------------------------------
+
+def get_dataset_stats(file_path: str) -> Dict[str, Any]:
+    """Return summary statistics for a JSONL dataset file.
+
+    Returns a dict with keys:
+    - ``total``: total number of records
+    - ``categories``: dict mapping category → count
+    - ``avg_instruction_len``: average character length of instructions
+    - ``avg_response_len``: average character length of responses
+    """
+    stats: Dict[str, Any] = {
+        "total": 0,
+        "categories": {},
+        "avg_instruction_len": 0.0,
+        "avg_response_len": 0.0,
+    }
+
+    if not os.path.exists(file_path):
+        return stats
+
+    instruction_lens: List[int] = []
+    response_lens: List[int] = []
+
+    with open(file_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                record = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+
+            stats["total"] += 1
+            cat = record.get("category", "unknown")
+            stats["categories"][cat] = stats["categories"].get(cat, 0) + 1
+            instruction_lens.append(len(record.get("instruction", "")))
+            response_lens.append(len(record.get("response", "")))
+
+    if instruction_lens:
+        stats["avg_instruction_len"] = round(sum(instruction_lens) / len(instruction_lens), 1)
+    if response_lens:
+        stats["avg_response_len"] = round(sum(response_lens) / len(response_lens), 1)
+
+    return stats
+
+
+# ---------------------------------------------------------------------------
+# __main__ – demo / smoke-test
+# ---------------------------------------------------------------------------
+
 if __name__ == "__main__":
-    # Example usage:
-    # Copy all dataset files from a session folder to zamai_final_dataset
-    # Example: Copy files from zamai_final_dataset to another folder (for demonstration)
-    # copy_dataset_files("zamai_final_dataset", "zamai_final_dataset_backup")
-    print("No source folder found. Update the path in copy_dataset_files() to a valid folder if you want to copy datasets.")
+    import sys
 
-    # Insert new records into a JSONL file
-    # new_records = [{"instruction": "...", "response": "...", "category": "..."}]
-    # insert_jsonl("zamai_final_dataset/zamai_training_dataset.jsonl", new_records)
+    default_dataset = "zamai_final_dataset/zamai_training_dataset.jsonl"
+    dataset_path = sys.argv[1] if len(sys.argv) > 1 else default_dataset
 
-    # Insert new records into a JSON file
-    # insert_json("zamai_final_dataset/zamai_training_dataset.json", new_records)
+    if not os.path.exists(dataset_path):
+        print(f"Dataset not found at '{dataset_path}'.")
+        print("Run 'python create_dataset_simple.py' first to generate a dataset.")
+        sys.exit(1)
 
-    # Insert new records into a CSV file
-    # insert_csv("zamai_final_dataset/zamai_training_dataset.csv", new_records)
+    print(f"📊 Dataset statistics for: {dataset_path}")
+    stats = get_dataset_stats(dataset_path)
+    print(f"  Total records        : {stats['total']}")
+    print(f"  Avg instruction len  : {stats['avg_instruction_len']} chars")
+    print(f"  Avg response len     : {stats['avg_response_len']} chars")
+    print("  Categories:")
+    for cat, count in sorted(stats["categories"].items(), key=lambda x: -x[1]):
+        print(f"    {cat:<25} {count}")
+
+    print()
+    print(f"🔍 Validating: {dataset_path}")
+    is_valid, issues = validate_dataset(dataset_path)
+    if is_valid:
+        print("  ✅ No issues found.")
+    else:
+        print(f"  ❌ {len(issues)} issue(s) found:")
+        for issue in issues[:20]:
+            print(f"    - {issue}")
+        if len(issues) > 20:
+            print(f"    ... and {len(issues) - 20} more.")
+
