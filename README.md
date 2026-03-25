@@ -6,6 +6,14 @@ Datasets and notebooks for Pashto language work in ZamAI Labs.
 - Labs org: https://github.com/ZamAI-ORG
 
 
+# Pashto Datasets
+
+Datasets and notebooks for Pashto language work in ZamAI Labs.
+
+- Website: https://zamai.dev
+- Labs org: https://github.com/ZamAI-ORG
+
+
 # 🇦🇫 ZamAI - Comprehensive Pashto Language Dataset
 
 **د پښتو ژبې د ذکي مرستیال لپاره جامع ډیټاسیټ**
